@@ -1,0 +1,48 @@
+{
+  "name": "Nuxt3 Starter Kit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "This Nuxt 3 Starter Kit is the plug and play solution for all your developer needs. We're talking: different Environments, Testing, Staging, Typing, Linting n'Everything already pre-configured. Heck, I even added full-fledged demo components! Everything to bring you up to speed",
+  "author": "Denis Steinhorst",
+  "scripts": {
+    "dev": "nuxt dev --dotenv .env.development",
+    "preview:staging": "nuxt preview --dotenv .env.staging",
+    "preview:production": "nuxt preview --dotenv .env.production",
+    "build:staging": "nuxi build --dotenv .env.staging",
+    "build:production": "nuxi build --dotenv .env.production",
+    "generate:staging": "nuxi generate --dotenv .env.staging",
+    "generate:production": "nuxi generate --dotenv .env.production",
+    "lint": "pnpm lint:js && pnpm lint:prettier",
+    "lintfix": "prettier --write --list-different . && pnpm lint:js --fix",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "postinstall": "nuxt prepare",
+    "cleanup": "nuxi clean"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.5.2",
+    "@nuxt/schema": "^3.3.3",
+    "@nuxt/types": "^2.16.3",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.10.0",
+    "nuxt": "^3.3.3",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4",
+    "vue-eslint-parser": "^9.1.1"
+  },
+  "dependencies": {
+    "sass": "^1.61.0",
+    "vite": "^4.2.1"
+  }
+}

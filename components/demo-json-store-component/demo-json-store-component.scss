@@ -1,0 +1,67 @@
+$block: 'demo-card';
+
+.#{$block} {
+  &__wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: pxToRem(50) auto;
+  }
+
+  &__header {
+    background-color: #f1f1f1;
+    border: 1px solid #e6e4e4;
+    padding: pxToRem(5);
+    font-weight: 600;
+  }
+
+  &__delete,
+  &__edit {
+    float: right;
+    background-color: #fff;
+    border: 1px solid #e6e4e4;
+    margin: pxToRem(-2);
+    font-weight: 600;
+    margin-left: pxToRem(20);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #444;
+      color: #fff;
+    }
+  }
+
+  &__content {
+    padding: pxToRem(5);
+    border: 1px solid #e6e4e4;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    label {
+      margin: pxToRem(2) 0;
+    }
+    input,
+    button {
+      margin: pxToRem(2) 0;
+      padding: pxToRem(10);
+      width: 100%;
+    }
+    button {
+      background-color: lightgray;
+      border: 1px solid #e6e4e4;
+      cursor: pointer;
+      font-weight: bold;
+      padding: pxToRem(10);
+
+      &:hover {
+        background-color: #444;
+        color: #fff;
+      }
+    }
+  }
+}
+.right {
+  float: right;
+}

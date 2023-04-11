@@ -42,3 +42,4 @@ node_modules/
 .output
 .nuxt
 dist
+*.zip
