@@ -541,6 +541,6 @@ If you like the `Nuxt3-Starter-Kit`, please support me by granting a ⭐️ on t
 | TypeScript | [TypeScript](https://www.typescriptlang.org/) | is JavaScript with syntax for types                     | [TypeScript Docs](https://www.typescriptlang.org/docs/)               |
 | Sass       | [Sass](https://sass-lang.com/)                | CSS with superpowers                                    | [Sass Docs](https://sass-lang.com/documentation)                      |
 | PNPM       | [PNPM](https://pnpm.io/)                      | Fast, disk space efficient package manager              | [PNPM Docs](https://pnpm.io/)                                         |
-| VueMacros  | [VueMacros](https://vue-macros.sxzz.moe)      | Explore and extend more macros and syntax sugar to Vue. | [VueMacros Docs](https://vue-macros.sxzz.moe/guide/)                  |
+| VueMacros  | [VueMacros](https://vue-macros.sxzz.moe)      | Explore and extend more macros and syntax sugar to Vue. | [VueMacros Docs](https://vue-macros.sxzz.moe/guide/getting-started.html)                  |
 | VueUse     | [VueUse](https://vueuse.org/)                 | Collection of essential Vue Composition API utilities   | [VueUse Docs](https://vueuse.org/guide/)                              |
 | i18n       | [i18n](https://v8.i18n.nuxtjs.org)            | Internationalization plugin for Vue/Nuxt                | [i18n Docs](https://i18n.nuxtjs.org)                                  |

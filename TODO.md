@@ -37,7 +37,7 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ### VueMacros
 
-- [ ] Add `VueMacros` and test
+- [x] Add `VueMacros` with base-configuration and test
 
 ### Histoire
 

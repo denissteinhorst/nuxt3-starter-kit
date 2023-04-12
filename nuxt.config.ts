@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     },
   },
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@vue-macros/nuxt'],
   nitro: {
     baseURL: config.appBaseURL,
     devStorage: {

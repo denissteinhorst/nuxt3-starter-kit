@@ -4,19 +4,7 @@ useServerSeoMeta({
   description: 'testing...',
 })
 
-interface IDemoLink {
-  title: string
-  linkText: string
-  link: string
-  highlight: string[]
-}
-
-interface IReadmeLink {
-  title: string
-  link: string
-}
-
-const demoLinks: IDemoLink[] = [
+const demoLinks = [
   {
     title: 'Navigate to another Page in (~/pages)',
     linkText: 'goto /demoPage',
@@ -67,7 +55,7 @@ const repoLink = 'https://github.com/denissteinhorst/nuxt3-starter-kit'
 const readmeLink =
   'https://github.com/denissteinhorst/nuxt3-starter-kit/blob/main/README.md'
   
-const readmeJumpmarks: IReadmeLink[] = [
+const readmeJumpmarks = [
   {
     title: 'About The Project',
     link: '#about-the-project',

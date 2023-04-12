@@ -1,13 +1,11 @@
 // https://nuxt.com/docs/guide/directory-structure/composables
 
+// Thanks to VueMacros, we can now import our model from dedicated file
+// https://vue-macros.sxzz.moe/features/better-define.html
+import { type IDemo } from "./useDemoJsonStoreComposable.model"
+
 export default async function useDemoJsonStoreComposable() {
   const { data: demoJsonData, refresh } = await useFetch('/api/demoJsonStoreEndpoint')
-
-  interface IDemo {
-    id: number
-    title: string
-    content: string
-  }
 
   const demo = ref({
     id: 0,

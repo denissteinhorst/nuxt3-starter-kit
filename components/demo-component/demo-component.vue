@@ -1,9 +1,8 @@
 <script setup lang="ts">
 
-interface IDemoComponent {
-  text: string,
-  text2: string,
-}
+// Thanks to VueMacros, we can now import our model from dedicated file
+// https://vue-macros.sxzz.moe/features/better-define.html
+import { type IDemoComponent} from './demo-component.model'
 
 const props = withDefaults(defineProps<IDemoComponent>(), {
   text: 'This is Demo Component\'s default text for text prop',

@@ -1,1 +1,1 @@
-ignores: ["@nuxt/types", "@nuxt/content", "@nuxt/schema"]
+ignores: ["@nuxt/types", "@nuxt/content", "@nuxt/schema", "@vue-macros/nuxt", "@vue-macros/volar"]
