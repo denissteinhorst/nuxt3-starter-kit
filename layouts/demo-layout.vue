@@ -9,6 +9,8 @@
     <footer class="custom-app-layout__footer">
       <small>Custom App Layout Footer</small>
     </footer>
+    <hr />
+    <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/layouts" target="_blank">Nuxt Documentation for "Layouts"</NuxtLink>
   </div>
 </template>
 

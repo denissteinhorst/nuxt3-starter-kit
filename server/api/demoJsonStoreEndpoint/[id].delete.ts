@@ -1,4 +1,6 @@
-export default eventHandler(async (event) => {
+// https://nuxt.com/docs/guide/directory-structure/server
+
+export default defineEventHandler(async (event) => {
   const id: number = parseInt(event.context.params?.id ?? '0')
   const demos = (await useStorage().getItem(
     'data/demoJsonStoreData.json'

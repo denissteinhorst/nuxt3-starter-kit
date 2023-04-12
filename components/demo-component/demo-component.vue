@@ -33,6 +33,8 @@ const items: string[] = [
         {{ item }}
       </li>
     </ul>
+    <hr />
+    <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/components" target="_blank">Nuxt Documentation for "Components"</NuxtLink>
   </div>
 </template>
 

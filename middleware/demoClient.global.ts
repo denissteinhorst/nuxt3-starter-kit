@@ -1,3 +1,5 @@
+// https://nuxt.com/docs/guide/directory-structure/middleware
+
 export default defineNuxtPlugin(() => {
   addRouteMiddleware(
     'global-test',

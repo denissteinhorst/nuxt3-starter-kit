@@ -40,7 +40,7 @@ let {
         <p>No data</p>
         <button @keydown.enter="refresh">Refresh</button>
       </div>
-      <small class="right">from: ~/data/demoJsonStoreData.json</small>
+      <small class="right">from: ~/public/data/demoJsonStoreData.json</small>
 
       <h2 v-html="mode.headlineText"></h2>
       <form @submit.prevent="formSubmit">
@@ -59,7 +59,11 @@ let {
         </button>
       </form>
     </div>
+    <hr />
+    <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/components" target="_blank">Nuxt Documentation for "Components"</NuxtLink>
   </div>
+  
+  <!-- https://nuxt.com/docs/getting-started/error-handling#rendering-errors-within-your-app -->
   <template #error="{ error }">
       <p>An error occurred: {{ error }}</p>
     </template>

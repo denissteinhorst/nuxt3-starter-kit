@@ -20,7 +20,8 @@ import DemoPublicApiComponent from '~/components/demo-public-api-component/demo-
 
   <DemoPublicApiComponent />
 
-  <br />
+  <hr />
+  <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/pages" target="_blank">Nuxt Documentation for "Pages"</NuxtLink><br /><br />
   <NuxtLink to="/">Back to Index</NuxtLink>
 </template>
 

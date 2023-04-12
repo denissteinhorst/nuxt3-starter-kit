@@ -66,6 +66,7 @@ const repoLink = 'https://github.com/denissteinhorst/nuxt3-starter-kit'
 
 const readmeLink =
   'https://github.com/denissteinhorst/nuxt3-starter-kit/blob/main/README.md'
+  
 const readmeJumpmarks: IReadmeLink[] = [
   {
     title: 'About The Project',
@@ -151,8 +152,9 @@ const highlight = (text: string, highlight: string[]) => {
     </p>
 
     <div class="index-page__readme">
+      <NuxtLink to="https://nuxt.com/docs/getting-started/routing" target="_blank">Nuxt Documentation for "Routing"</NuxtLink><br /><br />
+      
       <strong>Documentation Jumpmarks (Github README.md)</strong>
-
       <ul>
         <li v-for="readme in readmeJumpmarks" :key="readme.title">
           <a :href="`${readmeLink}${readme.link}`" target="_blank">{{

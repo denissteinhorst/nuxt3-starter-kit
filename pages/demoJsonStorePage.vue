@@ -27,7 +27,8 @@
 
   <demoJsonStoreComponent />
 
-  <br />
+  <hr />
+  <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/pages" target="_blank">Nuxt Documentation for "Pages"</NuxtLink><br /><br />
   <NuxtLink to="/">Back to Index</NuxtLink>
 </template>
 

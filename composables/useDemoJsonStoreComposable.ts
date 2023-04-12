@@ -1,3 +1,5 @@
+// https://nuxt.com/docs/guide/directory-structure/composables
+
 export default async function useDemoJsonStoreComposable() {
   const { data: demoJsonData, refresh } = await useFetch('/api/demoJsonStoreEndpoint')
 

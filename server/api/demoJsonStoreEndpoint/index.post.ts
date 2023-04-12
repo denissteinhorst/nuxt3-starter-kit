@@ -1,4 +1,6 @@
-export default eventHandler(async (event) => {
+// https://nuxt.com/docs/guide/directory-structure/server
+
+export default defineEventHandler(async (event) => {
   const demo = await readBody(event)
   const demos = (await useStorage().getItem(
     'data/demoJsonStoreData.json'
@@ -7,8 +9,6 @@ export default eventHandler(async (event) => {
     title: string
     description: string
   }>
-
-  // get last id from demos if demos is not empty
 
   if (demos.length > 0) {
     const lastId =

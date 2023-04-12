@@ -59,6 +59,7 @@ This Project requires the following to be installed:
 
 ```bash
 nvm install --lts=Hydrogen 18.15.0
+or nvm use 18.15.0 (if already installed)
 ```
 
 ```bash
@@ -438,7 +439,6 @@ pm2 monit # monitor your app (see runtime logs and more)
 <summary>Click here to expand the Troubleshooting Guide</summary>
 <br>
 <ul>
-<br/>
 
 ### The App started fine via Node but I can't see my app in the browser
 Check if your firewall is blocking the port you're using. If you're using ufw like i do, you can check if it's open with: 
@@ -452,13 +452,42 @@ sudo ufw allow 3000/tcp
 sudo ufw reload
 ```
 
-### You started your app inside pm2 but you get an error at module import
-Your PM2 runs probably a wrong node version, check if you're using the correct one with:
+### You started your app but you get an error like: "UnhandledPromiseRejectionWarning: SyntaxError: Unexpected token '?' at Loader.moduleStrategy (internal/modules/esm/translators.js:0:0)\"
+Your PM2 (or node) runs probably a wrong node version, check if you're using the correct one with:
 ```bash
-# expecting: 
-# node.js version │ 18.15.0
+# starting with node
+
+node -v
+
+#starting with pm2
 
 pm2 show nuxtapp
+
+# Expected node.js version │ 18.15.0
+```
+
+### You started your app but you get an error like: [nitro] [dev] [uncaughtException] Error: listen EADDRINUSE: address already in use :::3000"
+That means that your port is already in use. probably by another instance if your app:
+```bash
+# first check if pm2 runs your app
+
+pm2 status
+
+# if yes, stop it with:
+
+pm2 stop nuxtapp
+
+# if not, check if you have some node is running in the background (debian/ubuntu)
+
+ps -aef | grep node
+
+# you should see something like this:
+
+USER       000000  123456  0 Apr11 ?        00:00:00 node /home/user/nuxtapp/runapp.js (THIS IS YOUR PORT BLOCKING INSTANCE)
+USER       000000  123457  0 13:37 pts/0    00:00:00 grep node (THIS IS JUST YOUR SEARCH INSTANCE)
+
+# kill the blocking instance with:
+kill -9 ?????? (?????? is your instance id e.g. 123456)
 ```
 </ul>
 </details>

@@ -1,3 +1,5 @@
+<!-- https://nuxt.com/docs/guide/directory-structure/app -->
+
 <template>
   <div>
     <NuxtLayout>

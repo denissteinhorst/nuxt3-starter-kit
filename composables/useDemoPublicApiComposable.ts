@@ -1,3 +1,5 @@
+// https://nuxt.com/docs/guide/directory-structure/composables
+
 export default async function useDemoPublicApiComposable() {
   const { data: demoPublicData, refresh } = await useFetch('/api/demoPublicApiEndpoint')
 
