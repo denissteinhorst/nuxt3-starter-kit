@@ -20,7 +20,7 @@ module.exports = {
         "plugin:prettier/recommended"
     ],
     "plugins": [
-        'vue',
+        'vue', 'vitest',
     ],
     "rules": {
         "quotes": "off",

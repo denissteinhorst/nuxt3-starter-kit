@@ -155,8 +155,8 @@ These are the commands you'll use during development.
 | `pnpm dev` | Starts the Nuxt-Development server with HMR (uses: .env.development) | :3000 |
 | `pnpm lint` | Runs the ESLint-Runner for JS, TS-Files AND Prettier | - |
 | `pnpm story` | Starts the Histoire-Store UI | :6006 |
-| `pnpm test-ui` | Starts the Vitest-Test-Runner (Unit-Tests) | :51204/**vitest**/ |
-| `pnpm test-e2e` | Starts the Playwrite-Test-Runner (e2e-Tests) | tbd |
+| `pnpm test:ui` | Starts the Vitest-Test-Runner (Unit-Tests) | :51204/**vitest**/ |
+| `pnpm test:e2e` | Starts the Playwrite-Test-Runner (e2e-Tests) | tbd |
 | `pnpm cleanup` | removes common generated Nuxt files and caches, including: ".nuxt, .output, node_modules/.vite, node_modules/.cache" | - |
 
 <br>

@@ -45,7 +45,7 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ### Vitest
 
-- [ ] Add `Vitest` with base-configuration and test
+- [x] Add `Vitest` with base-configuration and test
 
 ### Playwright
 
