@@ -1,9 +1,10 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
+  "strict": true,
   "compilerOptions": {
-    "strict": true,
-    "types": ["unplugin-vue-macros/macros-global", "@nuxt/types", "@nuxt/schema", "@types/node", "node"]
+    "types": ["@histoire/plugin-vue/components", "unplugin-vue-macros/macros-global", "@nuxt/types", "@nuxt/schema", "@types/node", "node"],
+    "jsx": "preserve"
   },
   "vueCompilerOptions": {
     "plugins": [

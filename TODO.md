@@ -41,7 +41,7 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ### Histoire
 
-- [ ] Add `Histoire` with base-configuration and test
+- [x] Add `Histoire` with base-configuration and test
 
 ### Vitest
 

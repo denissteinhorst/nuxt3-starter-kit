@@ -10,7 +10,6 @@ let {
   removeDemo,
   formSubmit,
 } = await useDemoJsonStoreComposable()
-
 </script>
 
 <template>

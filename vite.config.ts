@@ -4,9 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     VueMacros.vite({
-      plugins: {
-        // vueJsx: VueJsx(), // if needed
-      },
+      plugins: {},
     }),
   ],
   css: {

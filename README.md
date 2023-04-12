@@ -154,7 +154,7 @@ These are the commands you'll use during development.
 | ------------------------- | -------------------------------------------------------------------- | ------------------ |
 | `pnpm dev` | Starts the Nuxt-Development server with HMR (uses: .env.development) | :3000 |
 | `pnpm lint` | Runs the ESLint-Runner for JS, TS-Files AND Prettier | - |
-| `pnpm histoire` | Starts the Histoire-Store UI | :6006 |
+| `pnpm story` | Starts the Histoire-Store UI | :6006 |
 | `pnpm test-ui` | Starts the Vitest-Test-Runner (Unit-Tests) | :51204/**vitest**/ |
 | `pnpm test-e2e` | Starts the Playwrite-Test-Runner (e2e-Tests) | tbd |
 | `pnpm cleanup` | removes common generated Nuxt files and caches, including: ".nuxt, .output, node_modules/.vite, node_modules/.cache" | - |
@@ -169,7 +169,7 @@ The preview command starts a server to preview your Nuxt application after runni
 | ------------------------- | -------------------------------------------------------------------- | ------------------ |
 | `pnpm preview:staging` | Starts the app in local preview (uses: .env.staging) | .output |
 | `pnpm preview:production` | Starts the app in local preview (uses: .env.production) | .output |
-
+| `pnpm story:preview` | Generates a static Histoire-UI | .output/storybook |
 <br>
 
 **Build:**
@@ -180,6 +180,7 @@ The build command creates a .output directory with all your application, server 
 | ------------------------- | -------------------------------------------------------------------- | ------------------ |
 | `pnpm build:staging` | Builds the app for staging (uses: .env.staging) | .output |
 | `pnpm build:production` | Builds the app for production (uses: .env.production) | .output |
+| `pnpm story:build` | Builds the app for production (uses: .env.production) | .output |
 
 <br>
 

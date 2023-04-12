@@ -16,10 +16,15 @@
     "lintfix": "prettier --write --list-different . && pnpm lint:js --fix",
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
+    "story": "histoire dev --dotenv .env.local",
+    "story:build": "histoire build --dotenv .env.production",
+    "story:preview": "histoire preview --dotenv .env.staging",
     "postinstall": "nuxt prepare",
     "cleanup": "nuxi clean"
   },
   "devDependencies": {
+    "@histoire/plugin-nuxt": "^0.15.9",
+    "@histoire/plugin-vue": "^0.15.8",
     "@nuxt/content": "^2.5.2",
     "@nuxt/schema": "^3.3.3",
     "@nuxt/types": "^2.16.3",
@@ -38,14 +43,15 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.10.0",
-    "nuxt": "^3.3.3",
+    "histoire": "^0.15.9",
+    "nuxt": "^3.3.1",
     "prettier": "^2.8.7",
+    "sass": "^1.61.0",
     "typescript": "^5.0.4",
     "unplugin-vue-macros": "^2.0.0",
     "vue-eslint-parser": "^9.1.1"
   },
   "dependencies": {
-    "sass": "^1.61.0",
-    "vite": "^4.2.1"
+    "vite": "^4.1.4"
   }
 }
