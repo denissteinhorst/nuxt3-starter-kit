@@ -58,7 +58,7 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ### VueUse
 
-- [ ] Add `VueUse` and test
+- [x] Add `VueUse` and test
 
 ### i18n
 

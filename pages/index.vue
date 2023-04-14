@@ -48,6 +48,12 @@ const demoLinks = [
     highlight: ['showcase pinia store'],
   },
   {
+    title: 'Navigate to a Page to showcase vueuse',
+    linkText: 'goto /demoVueusePage',
+    link: '/demoVueusePage',
+    highlight: ['showcase vueuse'],
+  },
+  {
     title:
       'Middleware on Client- and Server Side<br /><br />Client (~/middleware/demoClient.global.ts):<br />Watch your browser console after every route change<br /><br />Server (~/server/middleware/demoServer.global.ts):<br />Watch your terminal after sending a request to /api/',
     highlight: ['Middleware on Client- and Server Side'],

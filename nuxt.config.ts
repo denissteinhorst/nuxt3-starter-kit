@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     },
   },
-  modules: ['@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt', 'nuxt-vitest', '@vue-macros/nuxt'],
+  modules: ['@vueuse/nuxt', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt', 'nuxt-vitest', '@vue-macros/nuxt'],
   imports: {
     dirs: ['./stores'],
   },
