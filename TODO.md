@@ -50,10 +50,11 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 ### Playwright
 
 - [ ] Add `Playwright` with base-configuration and test
+- INFO: Due to some integration issues with `Vitest` and `Playwright` I've decided to postpone this task for now...
 
 ### Pinia
 
-- [ ] Add `Pinia` with base-configuration and test
+- [x] Add `Pinia` with base-configuration and test
 
 ### VueUse
 

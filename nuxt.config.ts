@@ -26,7 +26,15 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     },
   },
-  modules: ['nuxt-vitest', '@vue-macros/nuxt'],
+  modules: ['@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt', 'nuxt-vitest', '@vue-macros/nuxt'],
+  imports: {
+    dirs: ['./stores'],
+  },
+  pinia: {
+    autoImports: 
+      ['defineStore', 'definePiniaStore', 'acceptHMRUpdate']
+
+  },
   nitro: {
     baseURL: config.appBaseURL,
     devStorage: {
