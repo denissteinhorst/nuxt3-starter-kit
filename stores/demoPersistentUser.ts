@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 // https://pinia.vuejs.org/core-concepts/
 
 export const useDemoPersistentUser = defineStore('demoPersistentUser', {
@@ -13,6 +14,7 @@ export const useDemoPersistentUser = defineStore('demoPersistentUser', {
       return `${this.name}`
     },
     pDaysOnPlanet(): string {
+      // eslint-disable-next-line no-unused-expressions
       typeof this.dob === 'string'
         ? useDemoPersistentUser().pChangeDateOfBirth(new Date(this.dob))
         : ''
@@ -21,6 +23,7 @@ export const useDemoPersistentUser = defineStore('demoPersistentUser', {
       ).toLocaleString()
     },
     pCurrentAge(): number {
+      // eslint-disable-next-line no-unused-expressions
       typeof this.dob === 'string'
         ? useDemoPersistentUser().pChangeDateOfBirth(new Date(this.dob))
         : ''

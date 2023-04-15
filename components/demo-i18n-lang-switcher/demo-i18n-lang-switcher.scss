@@ -1,0 +1,11 @@
+$block: 'demo-i18n-lang-switcher';
+
+.#{$block} {
+  font-weight: bold;
+  margin-top: 50px;
+
+  &__select {
+    padding: 5px;
+    margin: 10px 0;
+  }
+}

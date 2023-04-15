@@ -1,4 +1,4 @@
-import { type Browser, chromium, firefox, webkit } from 'playwright';
+import { type Browser, chromium, firefox, webkit } from 'playwright'
 import { describe, expect, test, beforeAll, afterAll } from 'vitest'
 import { setup, createPage } from '@nuxt/test-utils'
 
@@ -42,9 +42,14 @@ describe('demo-component (e2e)', async () => {
         viewport: { width: 1280, height: 720 },
       })
       await page.waitForSelector('h3')
-      await page.screenshot({ path: `e2e/__screenshots__/demo-component (${browserType.name()}).png` })
+      await page.screenshot({
+        path: `e2e/__screenshots__/demo-component (${browserType.name()}).png`,
+      })
 
-      console.log(`\x1b[32m%s\x1b[0m`, `Screenshot created, check: ~/e2e/__screenshots__/demo-component (${browserType.name()}).png`)
+      console.log(
+        `\x1b[32m%s\x1b[0m`,
+        `Screenshot created, check: ~/e2e/__screenshots__/demo-component (${browserType.name()}).png`
+      )
     })
   }
 })

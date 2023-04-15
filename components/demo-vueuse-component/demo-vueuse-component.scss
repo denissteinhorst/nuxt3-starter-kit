@@ -1,28 +1,13 @@
-$block: 'demo-component';
+$block: 'demo-vueuse-component';
 
 .#{$block} {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 1rem;
-  width: 80%;
-  margin: pxToRem(32) 10%;
+  width: 50%;
+  margin: 0 25%;
+  display: flex;
+  justify-content: space-between;
 
-  &__title {
-    background: linear-gradient(
-      90deg,
-      #ff0000 0%,
-      #ff7f00 14%,
-      #ffff00 28%,
-      #00ff00 42%,
-      #0000ff 56%,
-      #4b0082 70%,
-      #ee82ee 84%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 36px;
-    font-weight: bolder;
-    letter-spacing: 2px;
+  div {
+    padding: 1rem;
+    margin: 1rem;
   }
 }

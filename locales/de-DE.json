@@ -6,4 +6,4 @@
   "nuxtLink": "Navigieren Sie zur ausgewählten i18n-Sprache (Übersetzen per URL)",
   "nuxtLinkOutro": "Wenn Sie eine andere Sprache als en-EN (die Standardeinstellung von nuxt.config) ausgewählt haben, sollten Sie sie in der URL sehen",
   "langSwitcherHeadline": "Sprache wechseln:"
-  }
+}

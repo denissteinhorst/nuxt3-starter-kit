@@ -80,11 +80,12 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ## Post-Requisites
 
-- [ ] Do a slight `Code-Cleanup` Session
-- [ ] Ensure that `packages` are up-to-date
+- [x] Do a slight `Code-Cleanup` Session
+- [ ] Do a deep `Code-Cleanup` Session
+- [x] Ensure that `packages` are up-to-date
 - [ ] Check for `unused / un-configured` Packages (via depcheck)
-- [ ] Ensure that `@types` are present
-- [ ] Ensure that `.files` are up-to-date
+- [x] Ensure that `@types` are present
+- [x] Ensure that `.files` are up-to-date
 - [ ] Ensure that `Build and Deploy` still works
       <br><br>
 

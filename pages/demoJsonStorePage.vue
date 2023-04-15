@@ -9,12 +9,12 @@
 
   <strong>How:</strong>
   <p>
-    The Component (~/components/demo-json-store-component.vue) provides a simple UI to
-    display data and trigger CRUD-Operations. <br />The data is stored in a
-    local JSON-File: (~/data/demoJsonStoreData.json). <br />
-    The Component is using the Composable (~/composables/demoJsonStoreComponent.ts) to
-    perform the CRUD-Operations on the local REST-API
-    (~/server/api/demoJsonStoreEndpoint/*).
+    The Component (~/components/demo-json-store-component.vue) provides a simple
+    UI to display data and trigger CRUD-Operations. <br />The data is stored in
+    a local JSON-File: (~/data/demoJsonStoreData.json). <br />
+    The Component is using the Composable
+    (~/composables/demoJsonStoreComponent.ts) to perform the CRUD-Operations on
+    the local REST-API (~/server/api/demoJsonStoreEndpoint/*).
   </p>
 
   <strong>WARNING:</strong>
@@ -28,7 +28,11 @@
   <demoJsonStoreComponent />
 
   <hr />
-  <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/pages" target="_blank">Nuxt Documentation for "Pages"</NuxtLink><br /><br />
+  <NuxtLink
+    to="https://nuxt.com/docs/guide/directory-structure/pages"
+    target="_blank"
+    >Nuxt Documentation for "Pages"</NuxtLink
+  ><br /><br />
   <NuxtLink to="/">Back to Index</NuxtLink>
 </template>
 

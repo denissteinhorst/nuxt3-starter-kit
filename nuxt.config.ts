@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import i18nConfig from './i18n.config'
 
 const useNuxtVitest =
   process.env.VITE_TEST_ENV === 'true' ? ['nuxt-vitest'] : []
