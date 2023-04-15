@@ -7,7 +7,7 @@ const useNuxtVitest =
 const appConfig = {
   env: process.env.APP_ENV ?? 'development',
   port: (process.env.APP_PORT ?? 3000) as number,
-  host: process.env.APP_HOST ?? '127.0.0.1',
+  host: process.env.APP_HOST ?? 'localhost',
   appBaseURL: process.env.NUXT_APP_BASE_URL ?? '',
   isDev: process.env.APP_ENV === 'development',
 }
@@ -45,7 +45,29 @@ export default defineNuxtConfig({
     autoImports: ['defineStore', 'definePiniaStore', 'acceptHMRUpdate'],
   },
   i18n: {
-    ...i18nConfig,
+    langDir: 'locales/',
+    strategy: 'prefix_except_default',
+    locales: [
+      {
+        code: 'de-DE',
+        iso: 'de-DE',
+        name: 'Deutsch',
+        file: 'de-DE.json',
+      },
+      {
+        code: 'en-US',
+        iso: 'en-US',
+        name: 'English (US)',
+        file: 'en-US.json',
+      },
+      {
+        code: 'fr-FR',
+        iso: 'fr-FR',
+        name: 'Français',
+        file: 'fr-FR.json',
+      },
+    ],
+    defaultLocale: 'en-US',
   },
   nitro: {
     baseURL: appConfig.appBaseURL,
