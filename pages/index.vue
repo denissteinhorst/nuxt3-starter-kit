@@ -54,6 +54,12 @@ const demoLinks = [
     highlight: ['showcase vueuse'],
   },
   {
+    title: 'Navigate to a Page to showcase i18n',
+    linkText: 'goto /demoI18nPage',
+    link: '/demoI18nPage',
+    highlight: ['showcase i18n'],
+  },
+  {
     title:
       'Middleware on Client- and Server Side<br /><br />Client (~/middleware/demoClient.global.ts):<br />Watch your browser console after every route change<br /><br />Server (~/server/middleware/demoServer.global.ts):<br />Watch your terminal after sending a request to /api/',
     highlight: ['Middleware on Client- and Server Side'],

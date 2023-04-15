@@ -1,0 +1,9 @@
+{
+  "headline": "This is the headline of the i18n demo component.",
+  "content": "This is a type blind text. You can use it to see if all the letters are there and what they look like. Sometimes you use words like Hamburgefonts, Rafgenduks or Handgloves to test fonts. Sometimes sentences that contain all the letters of the alphabet - these sentences are called \"pangrams\". Very famous is this one: The quick brown fox jumps over the lazy old dog. Often, foreign-language sentence parts are included in typoblind texts (AVAIL® and Wefox™ are testing aussi la kerning) to test the effect in other languages. In Latin, for example, almost any typeface looks good. Quod erat demonstrandum. Since 1975, most test texts lack numbers, which is why, according to TypoGb. 204 §, numbers will become mandatory in 86 of the texts from the year 2034. Non-compliance is punished with up to 245 € or 368 $. Just as important in are meanwhile also Âçcèñtë, which are contained in newer writings however almost always. An important but difficult field to integrate are OpenType functionalities. Depending on software and preferences, built-in small caps, kerning or ligatures (very smart) may not be displayed correctly.This is a type blind text. From it you can see if all letters are there and how they look. Sometimes you use words like Hamburgefonts, Rafgenduks",
+  "nuxtLinkHeadline": "Using NuxtLink",
+  "nuxtLinkIntro": "You can also directly navigate by the url instead, click the link to:",
+  "nuxtLink": "Navigate to selected i18n-Language (Translate per URL)",
+  "nuxtLinkOutro": "If you selected a different language then en-EN (the default from nuxt.config) you should see it in the URL",
+  "langSwitcherHeadline": "Switch Language:"
+}

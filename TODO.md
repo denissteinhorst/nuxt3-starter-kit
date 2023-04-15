@@ -62,7 +62,7 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ### i18n
 
-- [ ] Add `i18n` and test
+- [x] Add `i18n` and test
       <br><br>
 
 ---

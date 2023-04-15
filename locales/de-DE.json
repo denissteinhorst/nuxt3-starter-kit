@@ -1,0 +1,9 @@
+{
+  "headline": "Dies ist die Überschrift des i18n-Demo-Komponente.",
+  "content": "Dies ist ein blinder Text. Sie können es verwenden, um zu sehen, ob alle Buchstaben vorhanden sind und wie sie aussehen. Manchmal verwendet man Wörter wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriftarten zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - diese Sätze werden als \"Pangrams\" bezeichnet. Sehr berühmt ist dieser: The quick brown fox jumps over the lazy old dog. Oft werden fremdsprachige Satzteile in typoblinden Texten (AVAIL® und Wefox™ testen auch la Kerning) eingefügt, um die Wirkung in anderen Sprachen zu testen. Im Lateinischen sieht zum Beispiel fast jede Schrift gut aus. Quod erat demonstrandum. Seit 1975 fehlen den meisten Testtexten Zahlen, weshalb laut TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte obligatorisch werden. Verstöße werden mit bis zu 245 € oder 368 $ bestraft. Ebenso wichtig sind inzwischen auch Âçcèñtë, die jedoch in neueren Schriften fast immer enthalten sind. Ein wichtiger, aber schwieriger Bereich zur Integration sind OpenType-Funktionalitäten. Je nach Software und Vorlieben werden eingebaute Kapitälchen, Kerning oder Ligaturen (sehr schlau) möglicherweise nicht korrekt angezeigt. Dies ist ein blinder Text. Daraus können Sie sehen, ob alle Buchstaben vorhanden sind und wie sie aussehen. Manchmal verwendet man Wörter wie Hamburgefonts, Rafgenduks",
+  "nuxtLinkHeadline": "NuxtLink verwenden",
+  "nuxtLinkIntro": "Sie können auch direkt über die URL navigieren, klicken Sie auf den Link:",
+  "nuxtLink": "Navigieren Sie zur ausgewählten i18n-Sprache (Übersetzen per URL)",
+  "nuxtLinkOutro": "Wenn Sie eine andere Sprache als en-EN (die Standardeinstellung von nuxt.config) ausgewählt haben, sollten Sie sie in der URL sehen",
+  "langSwitcherHeadline": "Sprache wechseln:"
+  }
