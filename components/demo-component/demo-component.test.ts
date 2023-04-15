@@ -4,7 +4,7 @@ import { beforeAll, describe, expect, test } from 'vitest';
 import { type IDemoComponent } from './demo-component.model';
 import Component from './demo-component.vue';
 
-describe('Demo Component', () => {
+describe('Demo Component (Unit)', () => {
 
   const preWrapper = shallowMount(Component, {
     props: {

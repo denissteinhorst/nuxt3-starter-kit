@@ -42,4 +42,5 @@ node_modules/
 .output
 .nuxt
 dist
+e2e/__screenshots__
 *.zip

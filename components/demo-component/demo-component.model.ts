@@ -1,4 +1,4 @@
 export interface IDemoComponent {
-  text: string,
-  text2?: string,
+  text: string
+  text2?: string
 }

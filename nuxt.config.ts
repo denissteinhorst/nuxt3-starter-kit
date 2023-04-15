@@ -1,10 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import i18nConfig from "./i18n.config"
+import i18nConfig from './i18n.config'
 
-const config = {
+const useNuxtVitest =
+  process.env.VITE_TEST_ENV === 'true' ? ['nuxt-vitest'] : []
+
+const appConfig = {
   env: process.env.APP_ENV ?? 'development',
   port: (process.env.APP_PORT ?? 3000) as number,
-  host: process.env.APP_HOST ?? 'localhost',
+  host: process.env.APP_HOST ?? '127.0.0.1',
   appBaseURL: process.env.NUXT_APP_BASE_URL ?? '',
   isDev: process.env.APP_ENV === 'development',
 }
@@ -15,19 +18,26 @@ export default defineNuxtConfig({
     externalVue: false,
     inlineSSRStyles: true,
   },
-  dev: config.isDev,
+  dev: appConfig.isDev,
   devServer: {
-    host: config.host,
-    port: config.port,
+    host: appConfig.host,
+    port: appConfig.port,
   },
   app: {
-    baseURL: config.appBaseURL,
+    baseURL: appConfig.appBaseURL,
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     },
   },
-  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt', 'nuxt-vitest', '@vue-macros/nuxt'],
+  modules: [
+    ...useNuxtVitest,
+    '@nuxtjs/i18n',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+    '@vue-macros/nuxt',
+  ],
   imports: {
     dirs: ['./stores'],
   },
@@ -38,12 +48,12 @@ export default defineNuxtConfig({
     ...i18nConfig,
   },
   nitro: {
-    baseURL: config.appBaseURL,
+    baseURL: appConfig.appBaseURL,
     devStorage: {
       data: { driver: 'fs', base: './public/data' },
     },
     storage: {
       data: { driver: 'fs', base: './.output/public/data' },
-    }
+    },
   },
 })
