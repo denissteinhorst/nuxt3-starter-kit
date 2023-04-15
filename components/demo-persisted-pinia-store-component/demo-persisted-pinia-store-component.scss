@@ -1,0 +1,57 @@
+ $block: 'demo-component-pinia';
+
+  .#{$block} {
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 0 20%;
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        width: 25%;
+      }
+
+      th {
+        background-color: #d5d5d5;
+        color: black;
+      }
+
+      tr>td:nth-child(2) {
+        font-weight: bold;
+      }   
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      background-color: #d5d5d5;
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__non-persistent {
+      padding: 1rem;
+    }
+
+    &__persistent {
+      padding: 1rem;
+      &-reset-button {
+      }
+    }
+    
+  }

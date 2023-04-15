@@ -14,7 +14,7 @@ export const useDemoPersistentUser = defineStore('demoPersistentUser', {
     },
     pDaysOnPlanet(): string {
       typeof this.dob === 'string'
-        ? usePersistentUser().pChangeDateOfBirth(new Date(this.dob))
+        ? useDemoPersistentUser().pChangeDateOfBirth(new Date(this.dob))
         : ''
       return Math.floor(
         (Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24
@@ -22,14 +22,14 @@ export const useDemoPersistentUser = defineStore('demoPersistentUser', {
     },
     pCurrentAge(): number {
       typeof this.dob === 'string'
-        ? usePersistentUser().pChangeDateOfBirth(new Date(this.dob))
+        ? useDemoPersistentUser().pChangeDateOfBirth(new Date(this.dob))
         : ''
       return Math.floor(
         (Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24 / 365
       )
     },
     pResetStore(): any {
-      usePersistentUser().$reset()
+      useDemoPersistentUser().$reset()
     },
   },
 

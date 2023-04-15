@@ -36,7 +36,8 @@ const demoLinks = [
     highlight: ['showcase CRUD-Operations '],
   },
   {
-    title: 'Navigate to a Page to showcase component with data from an public API',
+    title:
+      'Navigate to a Page to showcase component with data from an public API',
     linkText: 'goto /demoPublicApiPage',
     link: '/demoPublicApiPage',
     highlight: ['showcase component with data from an public API'],
@@ -46,6 +47,12 @@ const demoLinks = [
     linkText: 'goto /demoPiniaStorePage',
     link: '/demoPiniaStorePage',
     highlight: ['showcase pinia store'],
+  },
+  {
+    title: 'Navigate to a Page to showcase persistent pinia store',
+    linkText: 'goto /demoPersistentPiniaStorePage',
+    link: '/demoPersistentPiniaStorePage',
+    highlight: ['showcase persistent pinia store'],
   },
   {
     title: 'Navigate to a Page to showcase vueuse',
@@ -72,7 +79,7 @@ const repoLink = 'https://github.com/denissteinhorst/nuxt3-starter-kit'
 
 const readmeLink =
   'https://github.com/denissteinhorst/nuxt3-starter-kit/blob/main/README.md'
-  
+
 const readmeJumpmarks = [
   {
     title: 'About The Project',
@@ -158,8 +165,12 @@ const highlight = (text: string, highlight: string[]) => {
     </p>
 
     <div class="index-page__readme">
-      <NuxtLink to="https://nuxt.com/docs/getting-started/routing" target="_blank">Nuxt Documentation for "Routing"</NuxtLink><br /><br />
-      
+      <NuxtLink
+        to="https://nuxt.com/docs/getting-started/routing"
+        target="_blank"
+        >Nuxt Documentation for "Routing"</NuxtLink
+      ><br /><br />
+
       <strong>Documentation Jumpmarks (Github README.md)</strong>
       <ul>
         <li v-for="readme in readmeJumpmarks" :key="readme.title">

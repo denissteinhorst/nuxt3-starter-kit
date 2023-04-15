@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DemoPiniaStoreComponent from '~~/components/demo-pinia-store-component/demo-pinia-store-component.vue'
+import DemoPersistedPiniaStoreComponent from '~~/components/demo-persisted-pinia-store-component/demo-persisted-pinia-store-component.vue'
 </script>
 
 <template>
@@ -10,7 +10,9 @@ import DemoPiniaStoreComponent from '~~/components/demo-pinia-store-component/de
     one that is non-persistent and one that is persistent.
   </p>
 
-  <DemoPiniaStoreComponent />
+  <ClientOnly placeholder="Loading...">
+    <DemoPersistedPiniaStoreComponent />
+  </ClientOnly>
 
   <hr />
   <NuxtLink
