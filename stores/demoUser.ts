@@ -1,6 +1,6 @@
 // https://pinia.vuejs.org/core-concepts/
 
-export const useUser = defineStore('user', {
+export const useDemoUser = defineStore('demoUser', {
   state: () => ({
     name: 'Max Mustermann',
     dob: new Date('1970-01-01'),
@@ -11,11 +11,15 @@ export const useUser = defineStore('user', {
       return `${this.name}`
     },
     daysOnPlanet(): string {
-      return Math.floor((Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24).toLocaleString()
+      return Math.floor(
+        (Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24
+      ).toLocaleString()
     },
     currentAge(): number {
-      return Math.floor((Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24 / 365)
-    }
+      return Math.floor(
+        (Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24 / 365
+      )
+    },
   },
 
   actions: {
@@ -27,8 +31,8 @@ export const useUser = defineStore('user', {
       this.dob = dob
     },
   },
-});
+})
 
-if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useUser, import.meta.hot));
+if (import.meta.hot != null) {
+  import.meta.hot.accept(acceptHMRUpdate(useDemoUser, import.meta.hot))
 }

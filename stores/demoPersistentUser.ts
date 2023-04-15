@@ -1,6 +1,6 @@
 // https://pinia.vuejs.org/core-concepts/
 
-export const usePersistentUser = defineStore('persistentUser', {
+export const useDemoPersistentUser = defineStore('demoPersistentUser', {
   state: () => {
     return {
       name: 'Change me',
@@ -13,16 +13,24 @@ export const usePersistentUser = defineStore('persistentUser', {
       return `${this.name}`
     },
     pDaysOnPlanet(): string {
-      typeof this.dob === 'string' ? usePersistentUser().pChangeDateOfBirth(new Date(this.dob)) : ''
-      return Math.floor((Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24).toLocaleString()
+      typeof this.dob === 'string'
+        ? usePersistentUser().pChangeDateOfBirth(new Date(this.dob))
+        : ''
+      return Math.floor(
+        (Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24
+      ).toLocaleString()
     },
     pCurrentAge(): number {
-      typeof this.dob === 'string' ? usePersistentUser().pChangeDateOfBirth(new Date(this.dob)) : ''
-      return Math.floor((Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24 / 365)
+      typeof this.dob === 'string'
+        ? usePersistentUser().pChangeDateOfBirth(new Date(this.dob))
+        : ''
+      return Math.floor(
+        (Date.now() - this.dob.getTime()) / 1000 / 60 / 60 / 24 / 365
+      )
     },
     pResetStore(): any {
-      return usePersistentUser().$reset()
-    }
+      usePersistentUser().$reset()
+    },
   },
 
   actions: {
@@ -47,9 +55,10 @@ export const usePersistentUser = defineStore('persistentUser', {
       sameSite: 'strict',
     }),
   },
-  
 })
 
-if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(usePersistentUser, import.meta.hot));
+if (import.meta.hot != null) {
+  import.meta.hot.accept(
+    acceptHMRUpdate(useDemoPersistentUser, import.meta.hot)
+  )
 }

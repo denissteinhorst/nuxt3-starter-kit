@@ -1,35 +1,35 @@
 <script setup lang="ts">
-  // NON PERSISTENT STORE
-  const user = useUser()
+// NON PERSISTENT STORE
+const user = useDemoUser()
 
-  const nameInput = ref('')
-  const dobInput = ref('')
+const nameInput = ref('')
+const dobInput = ref('')
 
-  const handleChangeName = () => {
-    user.changeName(nameInput.value)
-  }
+const handleChangeName = () => {
+  user.changeName(nameInput.value)
+}
 
-  const handleChangeDateOfBirth = () => {
-    user.changeDateOfBirth(new Date(dobInput.value))
-  }
+const handleChangeDateOfBirth = () => {
+  user.changeDateOfBirth(new Date(dobInput.value))
+}
 
-  // PERSISTENT STORE
-  const pUser = usePersistentUser()
+// PERSISTENT STORE
+const pUser = useDemoPersistentUser()
 
-  const pNameInput = ref('')
-  const pDobInput = ref('')
+const pNameInput = ref('')
+const pDobInput = ref('')
 
-  const pHandleChangeName = () => {
-    pUser.pChangeName(pNameInput.value)
-  }
+const pHandleChangeName = () => {
+  pUser.pChangeName(pNameInput.value)
+}
 
-  const pHandleChangeDateOfBirth = () => {
-    pUser.pChangeDateOfBirth(new Date(pDobInput.value))
-  }
-  
-  const pHandleStoreReset = () => {
-    pUser.pResetStore()
-  }
+const pHandleChangeDateOfBirth = () => {
+  pUser.pChangeDateOfBirth(new Date(pDobInput.value))
+}
+
+const pHandleStoreReset = () => {
+  pUser.pResetStore()
+}
 </script>
 
 <template>
@@ -49,13 +49,13 @@
           <tr>
             <td>name</td>
             <td>{{ user.fullName }} ( {{ user.currentAge }} )</td>
-            <td><input type="text" v-model="nameInput" /></td>
+            <td><input v-model="nameInput" type="text" /></td>
             <td><button @click="handleChangeName()">Submit</button></td>
           </tr>
           <tr>
             <td>Days on Planet</td>
             <td>{{ user.daysOnPlanet }}</td>
-            <td><input type="date" v-model="dobInput" /></td>
+            <td><input v-model="dobInput" type="date" /></td>
             <td><button @click="handleChangeDateOfBirth()">Submit</button></td>
           </tr>
         </tbody>
@@ -79,25 +79,30 @@
           <tr>
             <td>name</td>
             <td>{{ pUser.pFullName }} ( {{ pUser.pCurrentAge }} )</td>
-            <td><input type="text" v-model="pNameInput" /></td>
+            <td><input v-model="pNameInput" type="text" /></td>
             <td><button @click="pHandleChangeName()">Submit</button></td>
           </tr>
           <tr>
             <td>Days on Planet</td>
             <td>{{ pUser.pDaysOnPlanet }}</td>
-            <td><input type="date" v-model="pDobInput" /></td>
+            <td><input v-model="pDobInput" type="date" /></td>
             <td><button @click="pHandleChangeDateOfBirth()">Submit</button></td>
           </tr>
         </tbody>
       </table>
-      <button @click="pHandleStoreReset()">Click here to delete your 'persistentUser'-Cookie (Reset Store)</button>
+      <button @click="pHandleStoreReset()">
+        Click here to delete your 'persistentUser'-Cookie (Reset Store)
+      </button>
     </div>
     <hr />
-    <NuxtLink to="https://nuxt.com/docs/guide/directory-structure/components" target="_blank">Nuxt Documentation for
-      "Components"</NuxtLink>
+    <NuxtLink
+      to="https://nuxt.com/docs/guide/directory-structure/components"
+      target="_blank"
+      >Nuxt Documentation for "Components"</NuxtLink
+    >
   </div>
 </template>
 
 <style scoped lang="scss">
- @import 'demo-pinia-store-component.scss';
+@import 'demo-pinia-store-component.scss';
 </style>

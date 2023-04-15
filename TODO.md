@@ -70,8 +70,8 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 
 ## Enhancements
 
-- [ ] Create `Cleanup.sh` to Remove Demo-Contents for MacOS/Linux
-- [ ] Create `Cleanup.ps1` to Remove Demo-Contents for Windows
+- [x] Create `Cleanup.sh` to Remove Demo-Contents for MacOS/Linux
+- [x] Create `Cleanup.ps1` to Remove Demo-Contents for Windows
       <br><br>
 
 ---
