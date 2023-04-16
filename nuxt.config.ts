@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     langDir: 'locales/',
-    strategy: 'prefix_except_default',
+    strategy: 'prefix',
     locales: [
       {
         code: 'de-DE',
@@ -66,6 +66,11 @@ export default defineNuxtConfig({
         file: 'fr-FR.json',
       },
     ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+    },
+    vueI18nLoader: true,
     defaultLocale: 'en-US',
   },
   nitro: {
