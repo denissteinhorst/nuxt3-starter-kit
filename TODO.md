@@ -83,7 +83,7 @@ In order to keep track of the progress, I've created this `Todo List` for the `n
 - [x] Do a slight `Code-Cleanup` Session
 - [ ] Do a deep `Code-Cleanup` Session
 - [x] Ensure that `packages` are up-to-date
-- [ ] Check for `unused / un-configured` Packages (via depcheck)
+- [x] Check for `unused / un-configured` Packages (via depcheck)
 - [x] Ensure that `@types` are present
 - [x] Ensure that `.files` are up-to-date
 - [ ] Ensure that `Build and Deploy` still works

@@ -9,6 +9,14 @@ describe('demo-json-store-component (e2e)', async () => {
 
   const localApiResponse = [{ content: 'No demos found' }]
 
+  const localApiJsonResponse = [
+    {
+      content: 'What an awesome project! 😎',
+      id: 1,
+      title: 'Nuxt3 Starter Kit',
+    },
+  ]
+
   test('renders the demoJsonStorePage page', async () => {
     const html = await $fetch('/demoJsonStorePage')
     expect(html).toContain('Showcase: CRUD-Operations')
@@ -23,6 +31,6 @@ describe('demo-json-store-component (e2e)', async () => {
     const endpoint = url('/api/demoJsonStoreEndpoint')
     const response = await fetch(endpoint).then(async (res) => await res.json())
 
-    expect(response).toStrictEqual(localApiResponse)
+    expect(response).toStrictEqual(localApiJsonResponse)
   })
 })

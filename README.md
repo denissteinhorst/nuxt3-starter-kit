@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 
-<h1 align="center">Nuxt 3 - Starter Kit <br/>- work in progress, <a href="https://github.com/denissteinhorst/nuxt3-starter-kit/blob/main/TODO.md">current state</a> -</h1>
+<h1 align="center">Nuxt 3 - Starter Kit <br/><br/>- work in progress: <a href="https://github.com/denissteinhorst/nuxt3-starter-kit/blob/main/TODO.md">check state</a> -<br/>- Help wanted: <a href="https://github.com/denissteinhorst/nuxt3-starter-kit/blob/main/ISSUES.md">check issues</a> -</h1>
+
 
 <div align="center">
   <br>

@@ -4,4 +4,10 @@ import { defineConfig } from 'histoire'
 
 export default defineConfig({
   plugins: [HstVue(), HstNuxt()],
+  vite: {
+    build: { sourcemap: false },
+    devServer: {
+      sourcemap: true,
+    },
+  },
 })

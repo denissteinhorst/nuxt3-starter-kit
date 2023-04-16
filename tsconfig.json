@@ -4,7 +4,8 @@
   "strict": true,
   "compilerOptions": {
     "types": ["@vueuse/nuxt", "@pinia/nuxt", "@histoire/plugin-vue/components", "unplugin-vue-macros/macros-global", "@nuxt/types", "@nuxt/schema", "@types/node", "node"],
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "sourceMap": false,
   },
   "vueCompilerOptions": {
     "plugins": [
@@ -16,5 +17,9 @@
       "@vue-macros/volar/define-slots",
       "@vue-macros/volar/export-props"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    ".output",
+  ]
 }

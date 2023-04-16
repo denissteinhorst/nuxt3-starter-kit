@@ -8,10 +8,12 @@ export default defineConfig({
     }),
   ],
   css: {
+    devSourcemap: true,
     preprocessorOptions: {
       scss: {
         additionalData: '@import "@/assets/scss/app.scss";',
       },
     },
   },
+  build: { sourcemap: false },
 })

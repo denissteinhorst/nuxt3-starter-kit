@@ -15,6 +15,7 @@ const initState = (): IDemoComponent => ({
 </script>
 
 <template>
+  
   <Story title="DemoComponent">
     <Variant title="variant" :init-state="initState" auto-props-disabled="true">
       <template #default="{ state }">

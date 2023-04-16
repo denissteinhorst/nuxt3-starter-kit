@@ -34,12 +34,16 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt',
     '@vue-macros/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   imports: {
     dirs: ['./stores'],
   },
+  vueuse: {
+    ssrHandlers: true,
+  },
+  components: true,
   pinia: {
     autoImports: ['defineStore', 'definePiniaStore', 'acceptHMRUpdate'],
   },

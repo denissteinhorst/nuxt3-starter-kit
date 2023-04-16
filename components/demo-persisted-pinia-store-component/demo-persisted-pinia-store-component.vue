@@ -47,7 +47,7 @@ const pHandleStoreReset = () => {
         </tbody>
       </table>
       <button @click="pHandleStoreReset()">
-        Click here to delete your 'persistentUser'-Cookie (Reset Store)
+        Click here to reset your 'persistentUser'-Cookie (Reset Store)
       </button>
     </div>
     <hr />
